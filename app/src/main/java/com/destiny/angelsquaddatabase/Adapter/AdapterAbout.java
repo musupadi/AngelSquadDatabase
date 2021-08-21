@@ -1,7 +1,6 @@
 package com.destiny.angelsquaddatabase.Adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,8 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.destiny.angelsquaddatabase.Activity.SaintMaria.DetailAngelSaintMariaActivity;
-import com.destiny.angelsquaddatabase.Method.Destiny;
 import com.destiny.angelsquaddatabase.Model.Model;
 import com.destiny.angelsquaddatabase.R;
 

@@ -1,4 +1,4 @@
-package com.destiny.angelsquaddatabase.Activity;
+package com.destiny.angelsquaddatabase.Activity.ListAngel;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -11,11 +11,11 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.destiny.angelsquaddatabase.Activity.FLD.ListAngelFLDActivity;
-import com.destiny.angelsquaddatabase.Activity.FlamingVita.ListAngelFlamingVitaActivity;
-import com.destiny.angelsquaddatabase.Activity.Jude.ListAngelJudeActivity;
-import com.destiny.angelsquaddatabase.Activity.SaintMaria.ListAngelSaintMariaActivity;
-import com.destiny.angelsquaddatabase.Activity.Wolf.ListAngelWolfActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.FLD.ListAngelFLDActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.FlamingVita.ListAngelFlamingVitaActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.Jude.ListAngelJudeActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.SaintMaria.ListAngelSaintMariaActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.Wolf.ListAngelWolfActivity;
 import com.destiny.angelsquaddatabase.R;
 
 public class ListFactionActivity extends AppCompatActivity {

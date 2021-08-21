@@ -39,14 +39,14 @@ public class AboutUsData {
             {"6",
                     "Muha",
                     "Subaru21",
-                    "Support Developer",
+                    "Contributor Developer",
                     "https://angelsquad.lytogame.com/karakter/assets/images/detail/argent/erii.png"
             },
             {"7",
-                    "Hasbi",
-                    "Kodeta",
-                    "Support Developer",
-                    "https://angelsquad.lytogame.com/karakter/assets/images/detail/saint/charlotte-character.png"
+                    "SystemSyeh",
+                    "SystemSyeh",
+                    "Contributor Developer",
+                    "https://angelsquad.lytogame.com/karakter/assets/images/detail/fld/sarah-character.png"
             },
     };
     public static ArrayList<Model> getListData(){

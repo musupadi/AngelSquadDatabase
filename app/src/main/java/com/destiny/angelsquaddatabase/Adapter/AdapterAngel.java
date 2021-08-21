@@ -14,11 +14,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.destiny.angelsquaddatabase.Activity.FLD.DetailAngelFLDActivity;
-import com.destiny.angelsquaddatabase.Activity.FlamingVita.DetailAngelFlamingVitaActivity;
-import com.destiny.angelsquaddatabase.Activity.Jude.DetailAngelJudeActivity;
-import com.destiny.angelsquaddatabase.Activity.SaintMaria.DetailAngelSaintMariaActivity;
-import com.destiny.angelsquaddatabase.Activity.Wolf.DetailAngelWolfActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.FLD.DetailAngelFLDActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.FlamingVita.DetailAngelFlamingVitaActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.Jude.DetailAngelJudeActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.SaintMaria.DetailAngelSaintMariaActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.Wolf.DetailAngelWolfActivity;
 import com.destiny.angelsquaddatabase.Method.Destiny;
 import com.destiny.angelsquaddatabase.Model.Model;
 import com.destiny.angelsquaddatabase.R;

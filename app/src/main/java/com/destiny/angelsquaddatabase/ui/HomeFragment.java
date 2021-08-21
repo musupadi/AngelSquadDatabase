@@ -19,10 +19,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.destiny.angelsquaddatabase.Activity.ListFactionActivity;
+import com.destiny.angelsquaddatabase.Activity.FormasiArena.ListFormasiArenaActivity;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.ListFactionActivity;
 import com.destiny.angelsquaddatabase.Adapter.AdapterBerita;
 import com.destiny.angelsquaddatabase.Adapter.SliderAdapterBanner;
 import com.destiny.angelsquaddatabase.Model.BeritaData;
+import com.destiny.angelsquaddatabase.Model.FormasiArenaData;
 import com.destiny.angelsquaddatabase.Model.Model;
 import com.destiny.angelsquaddatabase.R;
 
@@ -37,7 +39,7 @@ public class HomeFragment extends Fragment {
     private int CurrentPage;
     RecyclerView recyclerView;
     private ArrayList<Model> pList = new ArrayList<>();
-    CardView listAngel,Jadwal,Combo,Tips;
+    CardView listAngel,Formasi,Combo,Tips;
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -61,7 +63,7 @@ public class HomeFragment extends Fragment {
         mSlideViewPager = view.findViewById(R.id.SlideViewPager);
         mDotLayout = view.findViewById(R.id.dotSlayout);
         listAngel = view.findViewById(R.id.cardListAngel);
-        Jadwal = view.findViewById(R.id.cardJadwal);
+        Formasi = view.findViewById(R.id.cardFormasi);
         Combo = view.findViewById(R.id.cardCombo);
         Tips = view.findViewById(R.id.cardTips);
         GetData();
@@ -75,10 +77,11 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        Jadwal.setOnClickListener(new View.OnClickListener() {
+        Formasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Fitur Jadwal World Boss Sedang Dibuat", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), ListFormasiArenaActivity.class);
+                startActivity(intent);
             }
         });
         Combo.setOnClickListener(new View.OnClickListener() {

@@ -1,4 +1,4 @@
-package com.destiny.angelsquaddatabase.Activity.FlamingVita;
+package com.destiny.angelsquaddatabase.Activity.ListAngel.FLD;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,14 +12,15 @@ import com.bumptech.glide.request.RequestOptions;
 import com.destiny.angelsquaddatabase.Method.Destiny;
 import com.destiny.angelsquaddatabase.R;
 
-public class DetailAngelFlamingVitaActivity extends AppCompatActivity {
+public class DetailAngelFLDActivity extends AppCompatActivity {
     String ID,NAMA,GAMBAR,DESKRIPSI,VA,FACTION,REALNAME,WEAPON,RARITY;
     TextView tvNama,tvNamaAsli,tvVA,tvSenjata,tvFaksi,tvDeskripsi,tvRarity;
     ImageView Gambar,GambarFaction;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_angel_flaming_vita);
+        setContentView(R.layout.activity_detail_angel_f_l_d);
 
         Destiny destiny = new Destiny();
         Intent intent = getIntent();

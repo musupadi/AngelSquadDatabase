@@ -1,4 +1,4 @@
-package com.destiny.angelsquaddatabase.Activity.Wolf;
+package com.destiny.angelsquaddatabase.Activity.ListAngel.Wolf;
 
 import androidx.appcompat.app.AppCompatActivity;
 
