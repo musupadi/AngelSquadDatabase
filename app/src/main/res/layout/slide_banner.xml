@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/banner"
+            android:id="@+id/ivBanner"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/gotham"
+            android:textSize="@dimen/text_xtra_large"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:text="Selamat Datang"
+            android:id="@+id/tvText"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

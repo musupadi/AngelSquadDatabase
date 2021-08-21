@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.destiny.angelsquaddatabase">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_ps"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_ps_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoAction">
+        <activity android:name=".Activity.FLD.DetailAngelFLDActivity"
+            android:label="Angel FLD"
+            android:parentActivityName=".Activity.FLD.ListAngelFLDActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Activity.FLD.ListAngelFLDActivity"
+            android:label="Angel FLD"
+            android:parentActivityName=".Activity.ListFactionActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".Activity.Jude.DetailAngelJudeActivity"
+            android:label="Angel JUDE"
+            android:parentActivityName=".Activity.Jude.ListAngelJudeActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.Jude.ListAngelJudeActivity"
+            android:label="Angel JUDE"
+            android:parentActivityName=".Activity.ListFactionActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.Wolf.DetailAngelWolfActivity"
+            android:label="Angel WOLF"
+            android:parentActivityName=".Activity.Wolf.ListAngelWolfActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.Wolf.ListAngelWolfActivity"
+            android:label="Angel WOLF"
+            android:parentActivityName=".Activity.ListFactionActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.FlamingVita.DetailAngelFlamingVitaActivity"
+            android:label="Angel Flaming Vita"
+            android:parentActivityName=".Activity.FlamingVita.ListAngelFlamingVitaActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.FlamingVita.ListAngelFlamingVitaActivity"
+            android:label="Angel Flaming Vita"
+            android:parentActivityName=".Activity.ListFactionActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.SaintMaria.DetailAngelSaintMariaActivity"
+            android:label="Angel Saint Maria"
+            android:parentActivityName=".Activity.SaintMaria.ListAngelSaintMariaActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.SaintMaria.ListAngelSaintMariaActivity"
+            android:label="Angel Saint Maria"
+            android:parentActivityName=".Activity.ListFactionActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.ListFactionActivity"
+            android:label="Angel Faction"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

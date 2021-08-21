@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AboutFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_loop="true"
+            app:lottie_fileName="frankeinstein.json"
+            app:lottie_autoPlay="true"
+            android:id="@+id/lottie"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="30dp">
+
+        </com.airbnb.lottie.LottieAnimationView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback Page Masih di buat"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/gotham"
+            android:textSize="@dimen/text_xtra_large"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
