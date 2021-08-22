@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.ArgentWing.ListAngelArgentWingActivity;
 import com.destiny.angelsquaddatabase.Activity.ListAngel.FLD.ListAngelFLDActivity;
 import com.destiny.angelsquaddatabase.Activity.ListAngel.FlamingVita.ListAngelFlamingVitaActivity;
 import com.destiny.angelsquaddatabase.Activity.ListAngel.Jude.ListAngelJudeActivity;
@@ -21,6 +23,7 @@ import com.destiny.angelsquaddatabase.R;
 public class ListFactionActivity extends AppCompatActivity {
     CardView cSaintMaria,cFlamingVita,cWOLF,cJude,cArgentWing,cFLD;
     ImageView iSaintMaria,iFlamingVita,iWOLF,iJude,iArgentWing,iFLD;
+    RelativeLayout Back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +64,8 @@ public class ListFactionActivity extends AppCompatActivity {
         cArgentWing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ListFactionActivity.this, "Nantikan Updatean Aplikasinya", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(ListFactionActivity.this, ListAngelArgentWingActivity.class);
+                startActivity(intent);
             }
         });
         cFLD.setOnClickListener(new View.OnClickListener() {
@@ -71,8 +75,15 @@ public class ListFactionActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
     private void Declaration(){
+        Back = findViewById(R.id.relativeBack);
         cSaintMaria = findViewById(R.id.cardSaintMaria);
         cFlamingVita = findViewById(R.id.cardFlamingVita);
         cWOLF = findViewById(R.id.cardWolf);

@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.destiny.angelsquaddatabase.Activity.ListAngel.ArgentWing.DetailAngelArgentWingActivity;
 import com.destiny.angelsquaddatabase.Activity.ListAngel.FLD.DetailAngelFLDActivity;
 import com.destiny.angelsquaddatabase.Activity.ListAngel.FlamingVita.DetailAngelFlamingVitaActivity;
 import com.destiny.angelsquaddatabase.Activity.ListAngel.Jude.DetailAngelJudeActivity;
@@ -114,6 +115,18 @@ public class AdapterAngel extends RecyclerView.Adapter<AdapterAngel.CardViewView
                     context.startActivity(i);
                 }else if (faction.equals("FLD")){
                     Intent i = new Intent(context, DetailAngelFLDActivity.class);
+                    i.putExtra("ID", p.getId());
+                    i.putExtra("NAMA", p.getNama());
+                    i.putExtra("GAMBAR",p.getGambar());
+                    i.putExtra("DESKRIPSI",p.getDeskripsi());
+                    i.putExtra("VA", p.getVa());
+                    i.putExtra("FACTION", p.getFaction());
+                    i.putExtra("REALNAME", p.getRealname());
+                    i.putExtra("WEAPON", p.getWeapon());
+                    i.putExtra("RARITY", p.getRarity());
+                    context.startActivity(i);
+                }else if (faction.equals("Argent Wing")){
+                    Intent i = new Intent(context, DetailAngelArgentWingActivity.class);
                     i.putExtra("ID", p.getId());
                     i.putExtra("NAMA", p.getNama());
                     i.putExtra("GAMBAR",p.getGambar());

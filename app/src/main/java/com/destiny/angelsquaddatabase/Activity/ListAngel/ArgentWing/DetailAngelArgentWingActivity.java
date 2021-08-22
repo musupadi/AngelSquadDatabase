@@ -1,4 +1,4 @@
-package com.destiny.angelsquaddatabase.Activity.ListAngel.Wolf;
+package com.destiny.angelsquaddatabase.Activity.ListAngel.ArgentWing;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +14,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.destiny.angelsquaddatabase.Method.Destiny;
 import com.destiny.angelsquaddatabase.R;
 
-public class DetailAngelWolfActivity extends AppCompatActivity {
+public class DetailAngelArgentWingActivity extends AppCompatActivity {
     String ID,NAMA,GAMBAR,DESKRIPSI,VA,FACTION,REALNAME,WEAPON,RARITY;
     TextView tvNama,tvNamaAsli,tvVA,tvSenjata,tvFaksi,tvDeskripsi,tvRarity;
     ImageView Gambar,GambarFaction;
@@ -23,7 +23,7 @@ public class DetailAngelWolfActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_angel_wolf);
+        setContentView(R.layout.activity_detail_angel_argent_wing);
 
         Destiny destiny = new Destiny();
         Intent intent = getIntent();

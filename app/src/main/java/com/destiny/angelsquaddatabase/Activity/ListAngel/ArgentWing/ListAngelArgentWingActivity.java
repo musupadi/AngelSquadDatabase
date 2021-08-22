@@ -1,4 +1,4 @@
-package com.destiny.angelsquaddatabase.Activity.ListAngel.FlamingVita;
+package com.destiny.angelsquaddatabase.Activity.ListAngel.ArgentWing;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,13 +13,14 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.destiny.angelsquaddatabase.Adapter.AdapterAngel;
 import com.destiny.angelsquaddatabase.Method.Destiny;
+import com.destiny.angelsquaddatabase.Model.AngelDataArgentWing;
 import com.destiny.angelsquaddatabase.Model.AngelDataFlamingVita;
 import com.destiny.angelsquaddatabase.Model.Model;
 import com.destiny.angelsquaddatabase.R;
 
 import java.util.ArrayList;
 
-public class ListAngelFlamingVitaActivity extends AppCompatActivity {
+public class ListAngelArgentWingActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     private ArrayList<Model> pList = new ArrayList<>();
     ImageView Faction;
@@ -27,7 +28,7 @@ public class ListAngelFlamingVitaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_angel_flaming_vita);
+        setContentView(R.layout.activity_list_angel_argent_wing);
         recyclerView = findViewById(R.id.recycler);
         GetData();
         Back.setOnClickListener(new View.OnClickListener() {
@@ -42,12 +43,12 @@ public class ListAngelFlamingVitaActivity extends AppCompatActivity {
         Back = findViewById(R.id.relativeBack);
         Faction = findViewById(R.id.ivFaction);
         Glide.with(this)
-                .load(destiny.Checker("Flaming Vita"))
+                .load(destiny.Checker("Argent Wing"))
                 .apply(new RequestOptions().override(200, 200))
                 .into(Faction);
-        pList.addAll(AngelDataFlamingVita.getListData());
+        pList.addAll(AngelDataArgentWing.getListData());
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        AdapterAngel adapterAngel = new AdapterAngel(this,"Flaming Vita");
+        AdapterAngel adapterAngel = new AdapterAngel(this,"Argent Wing");
         adapterAngel.setList(pList);
         recyclerView.setAdapter(adapterAngel);
     }

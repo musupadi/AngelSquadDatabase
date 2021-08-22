@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,6 +33,9 @@ public class FormationActivity extends AppCompatActivity {
     Integer FORWARD = 0;
     Integer MIDDLE = 0;
     Integer BACK = 0;
+
+    RelativeLayout Back;
+    TextView tvDetailNama;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +43,12 @@ public class FormationActivity extends AppCompatActivity {
         Declaration();
         GetData();
         Logic();
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
     private void Checker(ImageView img,String name){
         if (!name.equals(".")){
@@ -162,8 +172,7 @@ public class FormationActivity extends AppCompatActivity {
         //8
         IMG12 = intent.getExtras().getString("IMG12");
         TIMG12 = intent.getExtras().getString("TIMG12");
-
-        getSupportActionBar().setTitle("Formasi : "+USER);
+        tvDetailNama.setText("Formasi "+USER);
     }
     private void LogicForward(){
         LF.setVisibility(View.VISIBLE);
@@ -220,6 +229,8 @@ public class FormationActivity extends AppCompatActivity {
         }
     }
     private void Declaration(){
+        Back = findViewById(R.id.relativeBack);
+        tvDetailNama = findViewById(R.id.tvNamaDetail);
         img1 = findViewById(R.id.ivImage1);
         img2 = findViewById(R.id.ivImage2);
         img3 = findViewById(R.id.ivImage3);

@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -16,7 +18,8 @@ public class DetailAngelFLDActivity extends AppCompatActivity {
     String ID,NAMA,GAMBAR,DESKRIPSI,VA,FACTION,REALNAME,WEAPON,RARITY;
     TextView tvNama,tvNamaAsli,tvVA,tvSenjata,tvFaksi,tvDeskripsi,tvRarity;
     ImageView Gambar,GambarFaction;
-
+    RelativeLayout Back;
+    TextView tvDetailNama;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +36,6 @@ public class DetailAngelFLDActivity extends AppCompatActivity {
         REALNAME = intent.getExtras().getString("REALNAME");
         WEAPON = intent.getExtras().getString("WEAPON");
         RARITY = intent.getExtras().getString("RARITY");
-        getSupportActionBar().setTitle(NAMA+" - "+REALNAME);
 
         Declaration();
         tvNama.setText(NAMA);
@@ -43,7 +45,7 @@ public class DetailAngelFLDActivity extends AppCompatActivity {
         tvNamaAsli.setText(REALNAME);
         tvSenjata.setText(WEAPON);
         tvRarity.setText(RARITY);
-
+        tvDetailNama.setText(NAMA+" - "+REALNAME);
         Glide.with(this)
                 .load(GAMBAR)
                 .apply(new RequestOptions().override(200, 200))
@@ -52,8 +54,16 @@ public class DetailAngelFLDActivity extends AppCompatActivity {
                 .load(destiny.Checker(FACTION))
                 .apply(new RequestOptions().override(200, 200))
                 .into(GambarFaction);
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
     private void Declaration(){
+        Back = findViewById(R.id.relativeBack);
+        tvDetailNama = findViewById(R.id.tvNamaDetail);
         tvNama = findViewById(R.id.tvNama);
         tvNamaAsli = findViewById(R.id.tvRealName);
         tvVA = findViewById(R.id.tvVA);

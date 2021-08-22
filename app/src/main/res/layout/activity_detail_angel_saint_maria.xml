@@ -1,11 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity.ListAngel.SaintMaria.DetailAngelSaintMariaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:id="@+id/relativeBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvNamaDetail"
+            android:text="List Angel Flaming Vita"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/gotham"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_xtra_large"/>
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/ivFaction">
 
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -269,10 +317,11 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/background">
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_width="350dp"
+                        android:layout_height="350dp"
                         android:src="@drawable/ump45"
-                        android:alpha="0.3"
+                        android:alpha="0.1"
                         android:id="@+id/ivImageFaction"/>
                     <ScrollView
                         android:layout_width="match_parent"
@@ -305,4 +354,4 @@
         </LinearLayout>
 
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
