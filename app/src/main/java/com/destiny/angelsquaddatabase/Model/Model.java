@@ -7,6 +7,8 @@ public class Model {
     //Formation
     String Image1,Name1,Image2,Name2,Image3,Name3,Image4,Name4,Image5,Name5,Image6,Name6,Image7,Name7,Image8,Name8,Image9,Name9,Image10,Name10,Image11,Name11,Image12,Name12;
     String Core,CoreName,Formation;
+    //TipsAndTrick
+    String Kelebihan,Kekurangan,Introduksi,Tips,Counter,Author;
     public String getId() {
         return id;
     }
@@ -317,5 +319,53 @@ public class Model {
 
     public void setFormation(String formation) {
         Formation = formation;
+    }
+
+    public String getKelebihan() {
+        return Kelebihan;
+    }
+
+    public void setKelebihan(String kelebihan) {
+        Kelebihan = kelebihan;
+    }
+
+    public String getKekurangan() {
+        return Kekurangan;
+    }
+
+    public void setKekurangan(String kekurangan) {
+        Kekurangan = kekurangan;
+    }
+
+    public String getIntroduksi() {
+        return Introduksi;
+    }
+
+    public void setIntroduksi(String introduksi) {
+        Introduksi = introduksi;
+    }
+
+    public String getTips() {
+        return Tips;
+    }
+
+    public void setTips(String tips) {
+        Tips = tips;
+    }
+
+    public String getCounter() {
+        return Counter;
+    }
+
+    public void setCounter(String counter) {
+        Counter = counter;
+    }
+
+    public String getAuthor() {
+        return Author;
+    }
+
+    public void setAuthor(String author) {
+        Author = author;
     }
 }

@@ -1,4 +1,6 @@
-package com.destiny.angelsquaddatabase.Model;
+package com.destiny.angelsquaddatabase.Model.ListAngel;
+
+import com.destiny.angelsquaddatabase.Model.Model;
 
 import java.util.ArrayList;
 
@@ -130,7 +132,7 @@ public class AngelDataArgentWing {
             },
             {"13",
                     "Origin 12",
-                    "https://angelsquad.lytogame.com/karakter/assets/images/detail/argent/galia.png",
+                    "https://angelsquad.lytogame.com/karakter/assets/images/detail/argent/ballari.png",
                     "Selain bahwa dia adalah Angel Tingkat 2 yang diciptakan di Federasi Bumi Manusia, segala informasi mengenai Ballari terkesan sangat misterius. Prajurit yang sangat berpengalaman dan dapat diandalkan dengan keseriusan dan berpendirian kuat. Ketika sedang santai sangat suka membaca di tempat yang tenang.",
                     "-",
                     "Argent Wing",
@@ -140,7 +142,7 @@ public class AngelDataArgentWing {
             },
             {"14",
                     "P90",
-                    "https://angelsquad.lytogame.com/karakter/assets/images/detail/argent/vivienne.png",
+                    "https://static.wikia.nocookie.net/angelsquad/images/c/c2/P90.png/revision/latest/scale-to-width-down/1000?cb=20210822114437&path-prefix=id",
                     "Anggota Tim Tempur, kemampuannya sekelas dengan SKS, mereka berdua sama-sama memiliki kemampuan Limit Break yang kuat dan mampu membawa tim untuk memenangkan pertempuran. Namun, dia sangat sulit untuk disadarkan karena dia cenderung mudah mengantuk.",
                     "Yukiko Ayamiya",
                     "Argent Wing",

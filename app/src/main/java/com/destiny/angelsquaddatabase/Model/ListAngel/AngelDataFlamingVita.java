@@ -1,4 +1,6 @@
-package com.destiny.angelsquaddatabase.Model;
+package com.destiny.angelsquaddatabase.Model.ListAngel;
+
+import com.destiny.angelsquaddatabase.Model.Model;
 
 import java.util.ArrayList;
 

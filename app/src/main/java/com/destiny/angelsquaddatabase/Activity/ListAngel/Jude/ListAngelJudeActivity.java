@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.destiny.angelsquaddatabase.Adapter.AdapterAngel;
 import com.destiny.angelsquaddatabase.Method.Destiny;
-import com.destiny.angelsquaddatabase.Model.AngelDataJude;
+import com.destiny.angelsquaddatabase.Model.ListAngel.AngelDataJude;
 import com.destiny.angelsquaddatabase.Model.Model;
 import com.destiny.angelsquaddatabase.R;
 

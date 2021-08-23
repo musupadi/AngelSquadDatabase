@@ -13,9 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.destiny.angelsquaddatabase.Adapter.AdapterAbout;
-import com.destiny.angelsquaddatabase.Adapter.AdapterAngel;
 import com.destiny.angelsquaddatabase.Model.AboutUsData;
-import com.destiny.angelsquaddatabase.Model.AngelDataSaintMaria;
 import com.destiny.angelsquaddatabase.Model.Model;
 import com.destiny.angelsquaddatabase.R;
 

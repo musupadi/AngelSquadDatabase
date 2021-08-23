@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/logo_ps_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoAction">
-        <activity android:name=".Activity.ListAngel.ArgentWing.DetailAngelArgentWingActivity"></activity>
+        <activity android:name=".Activity.TipsAndTrick.DetailTipsAngelActivity"></activity>
+        <activity android:name=".Activity.TipsAndTrick.TipsActivity" />
+        <activity android:name=".Activity.TipsAndTrick.TipsAndTrickFactionActivity" />
+        <activity android:name=".Activity.ListAngel.ArgentWing.DetailAngelArgentWingActivity" />
         <activity android:name=".Activity.ListAngel.ArgentWing.ListAngelArgentWingActivity" />
         <activity android:name=".Activity.FormasiArena.FormationActivity" />
         <activity android:name=".Activity.FormasiArena.ListFormasiArenaActivity" />

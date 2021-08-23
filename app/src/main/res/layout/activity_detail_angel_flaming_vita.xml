@@ -81,7 +81,6 @@
                         app:cardElevation="10dp"
                         android:layout_margin="5dp">
                         <ImageView
-                            android:scaleType="fitXY"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:id="@+id/ivImage"

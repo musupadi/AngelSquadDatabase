@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import com.destiny.angelsquaddatabase.Activity.FormasiArena.ListFormasiArenaActivity;
 import com.destiny.angelsquaddatabase.Activity.ListAngel.ListFactionActivity;
+import com.destiny.angelsquaddatabase.Activity.TipsAndTrick.TipsAndTrickFactionActivity;
 import com.destiny.angelsquaddatabase.Adapter.AdapterBerita;
 import com.destiny.angelsquaddatabase.Adapter.SliderAdapterBanner;
 import com.destiny.angelsquaddatabase.Model.BeritaData;
@@ -93,7 +94,8 @@ public class HomeFragment extends Fragment {
         Tips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Fitur Jadwal Tips & Trick Sedang Dibuat", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), TipsAndTrickFactionActivity.class);
+                startActivity(intent);
             }
         });
     }
