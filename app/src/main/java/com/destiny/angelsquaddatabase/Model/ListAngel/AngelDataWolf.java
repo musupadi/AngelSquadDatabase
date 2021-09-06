@@ -50,7 +50,7 @@ public class AngelDataWolf {
             },
             {"5",
                     "XM1014",
-                    "https://angelsquad.lytogame.com/karakter/assets/images/detail/flaming/qbz95.png",
+                    "https://static.wikia.nocookie.net/angelsquad/images/4/4e/XM1014.png/revision/latest/scale-to-width-down/350?cb=20210607090350&path-prefix=id",
                     "Angel langka hasil penelitian menggunakan Manusia. Kemampuannya semua berdasarkan hasil penelitian dan analisa, berkebalikan dengan kemampuan tempurnya yang rendah. Namun ada beberapa cara \"Pintar\" untuk meningkatkan kemampuan tempurnya selama pertempuran.\n" +
                             "\n" +
                             "Past Roles : Phil - Promised Neverland, Kirara Mizutani - It Was Slime When Reincarnated",
